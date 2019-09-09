@@ -21,3 +21,5 @@ the important steps.
 5. Type of activity is a number here which isn't very descriptive. Extract the labels from activity_labels.txt, convert activity into a categorical variable and assign the labels to the levels of activity.
 6. Select only those columns which contain "mean" or "std" in their name using grep. For select function from dplyr to work you need to remove duplicate column names which can be done using make.unique() function.
 7. Create a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Run the script in Rstudio, and the required table will be available in the view section.
