@@ -47,7 +47,7 @@ levels(total$Activity) <- activity_labels$V2
 names(total) <- make.unique(names(total))
 
 "Extract only the measurements on the mean and standard deviation"
-total <- select(total, grep("SubjectNum|Activity|mean|std", names(total)))
+total <- select(total, grep("SubjectNum|Activity|mean\\(\\)|std\\(\\)", names(total)))
 
 "Group by subject number and type of activity and calculate mean on that"
 tidy_set <- total[, lapply(.SD, mean) , by = .(SubjectNum, Activity)]
